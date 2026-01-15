@@ -5,10 +5,10 @@ jobs: # like stages in jenkins
     runs-on: ubuntu-latest
     steps: # stages
       - name: checkout the code
-        run:  actions/checkout@v5
+        uses:  actions/checkout@v5
 
       - name: setup terraform
         uses: hashicorp/setup-terraform@v3
-        
+
       - name: run init
         run:  terraform init
