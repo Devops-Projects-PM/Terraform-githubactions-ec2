@@ -2,7 +2,7 @@ name: ec2-creation
 on: [push] # triggers
 jobs: # like stages in jenkins
   terraform:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps: # stages
       - name: checkout the code
         uses:  actions/checkout@v5
